@@ -107,6 +107,10 @@ img {
 #joinbtn{
     margin-left: 15em;
 }
+
+#joinbtn1{
+    margin-left: 14em;
+}
 .btn-orange:hover { background-color: #e65100; }
 
 .btn-full {
@@ -438,10 +442,7 @@ img {
     text-align: center;
 }
 
-.pattern-bg-left {
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 50px;
-}
+
 
 /* --- Footer --- */
 .footer-logo p {
@@ -563,6 +564,10 @@ img {
 
 #joinbtn{
     margin-left: 8em;
+}
+
+#joinbtn1{
+    margin-left: 5em;
 }
 
     .services-container,
