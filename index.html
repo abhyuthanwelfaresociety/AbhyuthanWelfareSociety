@@ -25,14 +25,29 @@
         </div>
 
         <nav id="nav-menu">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#teams">Our Team</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfr7w0tUD0EkSK43tD6ih4p-IUSgjOZ1f7Mql1Z8fCEet2mxQ/viewform?usp=publish-editor">Join Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+          <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+       <li class="dropdown">
+        <a href="">About Us</a>
+        <ul class="dropdown-menu">
+            <li><a href="#about-ngo">About NGO</a></li>
+            <li><a href="#aboutFounder">About Founder</a></li>
+        </ul>
+    </li>
+    <li><a href="#teams">Our Team</a></li>
+
+    <li class="dropdown">
+        <a href="#events">Events</a>
+        <ul class="dropdown-menu">
+            <li><a href="#events">Past Events</a></li>
+            <li><a href="#upcoming-events">Upcoming Events</a></li>
+        </ul>
+    </li>
+
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfr7w0tUD0EkSK43tD6ih4p-IUSgjOZ1f7Mql1Z8fCEet2mxQ/viewform?usp=publish-editor">Join Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+</ul>
+
         </nav>
 
     </div>
@@ -94,40 +109,41 @@
         </div>
     </section>
 
-    <section id="events" class="section-padding">
+ 
+   
+   <!-- UPCOMING EVENTS SECTION -->
+     <section id="upcoming-events" class="section-padding">
         <div class="container">
-            <h2 class="section-title text-purple text-center">Events</h2>
+            <h2 class="section-title text-purple text-center">Upcoming Events</h2>
             <div class="events-grid grid-3">
                 <div class="event-card">
                      <img src="./images/event1.png" alt="Nari Shakti">
                     <div class="card-body">
                         <h3>षोडश संस्कार पर व्याख्यान</h3>
                         <p>Join us for ‘षोडश संस्कार पर व्याख्यान’, a thoughtful lecture by Abhyuthan Welfare Society, to understand the sixteen traditional life ceremonies and their significance.</p>
-                        <a href="#" class="btn btn-orange btn-full">View More</a>
+                        <a href="#" class="btn btn-orange btn-full" >View More</a>
                     </div>
                 </div>
-                <div class="event-card">
-                     <img src="./images/Har bacha.png" alt="Har Saans Pushpa">
-                    <div class="card-body">
-                        <h3>Har Baccha Padhega</h3>
-                        <p>An inspiring event dedicated to empowering & uplifting women through stories of resilience & unity.</p>
-                        <a href="#" class="btn btn-orange btn-full">View More</a>
-                    </div>
-                </div>
-                <div class="event-card">
-                     <img src="./images/donation drive.png" alt="Donation Drive">
-                    <div class="card-body">
-                        <h3>
-Donation Drive</h3>
-                        <p>Together, let's make a difference—your small act of giving can create a big impact to the society.</p>
-                        <a href="#" class="btn btn-orange btn-full">View More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                
     </section>
 
-    <section id="about" class="section-padding bg-cream pattern-bg-right">
+
+    
+
+    <!-- Modal -->
+<div id="eventModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img src="/mnt/data/3573c079-3fb3-4f13-970d-b99c133a9b9e.jpeg" alt="Event Image" id="modal-image" />
+    <div class="modal-details">
+      <h3 id="modal-title"></h3>
+      <p><strong>Date:</strong> <span id="modal-date"></span></p>
+      <p><strong>Venue:</strong> <span id="modal-venue"></span></p>
+    </div>
+  </div>
+</div>
+   <!-- ABOUT SECTION -->
+ <section id="aboutFounder" class="section-padding bg-cream pattern-bg-right">
         <div class="container grid-2 align-center">
             <div class="inspiration-image">
                  <img src="./images/saritaji.jpeg" alt="Mrs. Sarita Agrawal">
@@ -143,24 +159,26 @@ Whether you are a student, a working professional, or a retired individual, your
         </div>
     </section>
 
-    
-
 <!-- TEAM SECTION -->
 <section class="team" id="teams">
     <h2>Our Team</h2>
     <div class="team-grid">
+        <div class="team-card"><img src="./images/manjuji-removebg-preview.png" alt="Mansi Lalwani"><h3>Manju Agrawal</h3>
+        <h4>+91  9826118599</h4></div>
+          <div class="team-card"><img src="./images/mansi-removebg-preview.png" alt="Mansi Lalwani"><h3>Mansi Lalwani</h3>
+        <h4>+91 9993644437</h4></div>
+       <div class="team-card"><img src="./images/nita-removebg-preview (1).png" alt="Nita Gupta"><h3>Nita Gupta</h3>
+        <h4>+91 6265770547</h4></div>
         <div class="team-card"><img src="./images/nistaji.jpg" alt="Nishtha Saritey Agrawal"><h3>Nishtha Saritey Agrawal</h3>
         <h4>+91 8745028490</h4></div>
+                <div class="team-card"><img src="./images/abhisek-removebg-preview.png" alt="Abhishek Agrawal"><h3>Abhishek Agrawal</h3>
+        <h4>+91 9826425718</h4></div>
          <div class="team-card"><img src="./images/uttar-removebg-preview.png" alt="Uttar Kumar Patel"><h3>Uttar Kumar Patel</h3>
         <h4>+91 9827470386</h4></div>
-         <div class="team-card"><img src="./images/abhisek-removebg-preview.png" alt="Abhishek Agrawal"><h3>Abhishek Agrawal</h3>
-        <h4>+91 9826425718</h4></div>
-         <div class="team-card"><img src="./images/manjuji-removebg-preview.png" alt="Mansi Lalwani"><h3>Manju Agrawal</h3>
-        <h4>+91  9826118599</h4></div>
-         <div class="team-card"><img src="./images/mansi-removebg-preview.png" alt="Mansi Lalwani"><h3>Mansi Lalwani</h3>
-        <h4>+91 9993644437</h4></div>
-            <div class="team-card"><img src="./images/nita-removebg-preview (1).png" alt="Nita Gupta"><h3>Nita Gupta</h3>
-        <h4>+91 6265770547</h4></div>
+ 
+         
+       
+     
           
         <div class="team-card"><img src="./images/radhaji-removebg-preview.png" alt="Radha Singhania"><h3>Radha Singhania</h3>
         <h4>+91 9009447901</h4></div>
@@ -174,6 +192,58 @@ Whether you are a student, a working professional, or a retired individual, your
 </section>
 
 
+   <!-- PAST EVENTS SECTION -->
+   <section id="events" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-purple text-center">Past Events</h2>
+            <div class="events-grid grid-3">
+                <div class="event-card">
+                     <img src="./images/dd.png" alt="Nari Shakti">
+                    <div class="card-body">
+                        <h3>डीडी नगर में नवनिर्मित लक्ष्मी नारायण मंदिर का स्थापना उत्सव</h3>
+                        <p>डीडी नगर में नवनिर्मित लक्ष्मी नारायण मंदिर का स्थापना उत्सव सफलतापूर्वक संपन्न हुआ। भव्य पूजा-अर्चना और सांस्कृतिक कार्यक्रमों के साथ यह पावन अवसर हमारे साथ साझा करने के लिए धन्यवाद।</p>
+                        <a href="#" class="btn btn-orange btn-full">View More</a>
+                    </div>
+                </div>
+             
+    </section>
+
+
+
+<!-- ABOUT NGO SECTION -->
+<section id="about-ngo" class="section-padding bg-light pattern-bg-left">
+    <div class="container grid-2 align-center">
+        <div class="about-ngo-image">
+            <img src="./images/aboutNgo.png" alt="Abhyuthan Welfare Society Office" />
+        </div>
+        <div class="about-ngo-content">
+            <h2 class="section-title text-purple">Abhyuthan Welfare Society</h2>
+            <p>Founded with the mission to uplift communities in Chhattisgarh, <strong>Abhyuthan Welfare Society</strong> works tirelessly to promote health, education, culture, and social welfare. Our programs aim to empower individuals and families, nurturing holistic development and fostering sustainable social change.</p>
+            
+            <h3 class="text-purple">Our Vision</h3>
+            <p>To create a society where every individual has access to education, healthcare, and opportunities for personal growth.</p>
+            
+            <h3 class="text-purple">Our Mission</h3>
+            <ul>
+                <li>Provide essential healthcare and wellness programs to underserved communities.</li>
+                <li>Support de-addiction and rehabilitation initiatives for individuals in need.</li>
+                <li>Encourage creative growth and holistic development for children and youth.</li>
+                <li>Organize community events that foster social cohesion and cultural awareness.</li>
+            </ul>
+            
+            <h3 class="text-purple">Core Values</h3>
+            <p>Compassion, Integrity, Inclusivity, and Empowerment guide everything we do.</p>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfr7w0tUD0EkSK43tD6ih4p-IUSgjOZ1f7Mql1Z8fCEet2mxQ/viewform?usp=publish-editor" class="btn btn-orange mt-3" id="joinbtn">Join Our Mission</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Donation section  -->
     <section id="donate" class="section-padding bg-light">
         <div class="container grid-2 align-center">
             <div class="donate-image">
@@ -184,7 +254,7 @@ Whether you are a student, a working professional, or a retired individual, your
                 <p>Your contribution can make a world of difference. We rely on the generosity of donors like you to sustain our programs and reach more people in need. Every donation helps provide food, education, and healthcare.</p>
                 <p>Join hands with us to create a lasting impact and bring hope to those who need it most.</p>
                 <br>
-                <a href="#" class="btn btn-green">Donate Now</a>
+                <!-- <a href="#" class="btn btn-green">Donate Now</a> -->
             </div>
         </div>
     </section>
@@ -196,7 +266,7 @@ Whether you are a student, a working professional, or a retired individual, your
                 <p>Volunteering is a powerful way to give back to the community. We value your time and skills. By becoming a volunteer, you become an integral part of our mission.</p>
                 <p>Whether it's teaching, organizing events, or providing administrative support, your efforts directly impact lives.</p>
                 <br>
-                <a href="#" class="btn btn-orange">Join Us</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfr7w0tUD0EkSK43tD6ih4p-IUSgjOZ1f7Mql1Z8fCEet2mxQ/viewform?usp=publish-editor" class="btn btn-orange" id="joinbtn">Join Us</a>
             </div>
             <div class="volunteer-image">
                  <img src="./images/time.jpeg" alt="Volunteer Graphic">
