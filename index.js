@@ -67,8 +67,8 @@ const eventData = [
     },
     {
         title: 'डीडी नगर में नवनिर्मित लक्ष्मी नारायण मंदिर का स्थापना उत्सव',
-        date: 'To be updated',
-        venue: 'To be updated',
+        date: '03 दिसंबर 2025',
+        venue: 'डीडी नगर , रायपुर (छ.ग.) ',
         image: './images/pastevent1.jpeg'
     },
     {
