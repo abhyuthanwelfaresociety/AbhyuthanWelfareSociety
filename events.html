@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Events - Abhyuthan Welfare Society</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #fff8e1;
+        }
+
+        header {
+            background: #5e35b1;
+            padding: 20px 30px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .event-box {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: 0.3s;
+            border: 2px solid orange;
+        }
+
+        .event-box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+        }
+
+        .event-box img,
+        .event-box video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .back-button {
+            display: block;
+            margin: 25px auto;
+            width: fit-content;
+            padding: 12px 25px;
+            background: #fb8c00;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background: #e65100;
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>All Events Gallery</h1>
+</header>
+
+<div class="gallery-container">
+    <div class="gallery-grid">
+        <!-- Event Images -->
+        
+
+        <div class="event-box"><img src="./images/1.jpg" alt="Event 1"></div>
+          <div class="event-box"><img src="./images/people5.jpeg" alt="Event 1"></div>
+        <div class="event-box"><img src="./images/2.jpg" alt="Event 2"></div>
+         <div class="event-box"><img src="./images/people1.jpeg" alt="Event 1"></div>
+        <div class="event-box"><img src="./images/3.jpg" alt="Event 3"></div>
+          <div class="event-box"><img src="./images/people3.jpeg" alt="Event 1"></div>
+
+        <div class="event-box"><img src="./images/4.jpg" alt="Event 4"></div>
+          <div class="event-box"><img src="./images/people7.jpeg" alt="Event 1"></div>
+
+        <div class="event-box"><img src="./images/5.jpg" alt="Event 5"></div>
+          <div class="event-box"><img src="./images/people6.jpeg" alt="Event 1"></div>
+
+        <div class="event-box"><img src="./images/6.jpg" alt="Event 6"></div>
+          <div class="event-box"><img src="./images/people2.jpeg" alt="Event 1"></div>
+          <div class="event-box"><img src="./images/people4.jpeg" alt="Event 1"></div>
+
+
+
+
+
+
+        <!-- Event Videos -->
+        <div class="event-box">
+            <video controls>
+                <source src="./images/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="event-box">
+            <video controls>
+                <source src="./images/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- More Images -->
+        <div class="event-box"><img src="./images/7.jpg" alt="Event 7"></div>
+        <div class="event-box"><img src="./images/8.jpg" alt="Event 8"></div>
+        <div class="event-box"><img src="./images/9.jpg" alt="Event 9"></div>
+        <div class="event-box"><img src="./images/10.jpg" alt="Event 10"></div>
+        <div class="event-box"><img src="./images/pastevent1.jpeg" alt="Past Event"></div>
+    </div>
+
+    <a href="index.html" class="back-button">⬅ Back to Home</a>
+</div>
+
+</body>
+</html>
